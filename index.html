@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nahitantsoa - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        ANDRIANIRINA Nahitantsoa<br />
+        Fahafahana Evariste
+      </div>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="https://github.com/nahitantsoa" target="_blank">Autre projet</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="accueil" class="hero">
+    <h1>Mes Projets</h1>
+    <p>Vidéos • Photos • Documents</p>
+    <a href="#portfolio" class="btn">Voir le portfolio</a>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="grid">
+
+      <!-- VIDÉO -->
+      <div class="card">
+        <h3>Projet Vidéo 1</h3>
+        <video controls width="100%">
+          <source src="assets/videos/projet1.mp4" type="video/mp4">
+          Désolé, la vidéo ne se charge pas.
+        </video>
+        <p>Description de la vidéo</p>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="card">
+        <h3>Photo Projet</h3>
+        <img src="assets/images/photo1.jpg" alt="Ma photo" style="width:100%;">
+        <p>Description de l'image</p>
+      </div>
+
+      <!-- DOCUMENT -->
+      <div class="card">
+        <h3>Document PDF</h3>
+        <p><a href="assets/documents/Surveillance sur l'attaque MITM.pdf" download>Télécharger le PDF</a></p>
+        <p>Clique pour télécharger</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© Nahitantsoa 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
