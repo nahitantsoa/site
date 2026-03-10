@@ -3,19 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nahitantsoa - Portfolio</title>
-  <link rel="icon" type="icon" href="essents/images/icon.jpg">
-  <link rel="stylesheet" href="style.css">
+  <title>Nahitantsoa | Portfolio</title>
+  <link rel="icon" type="image/jpg" href="assets/images/icon.jpg">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="bootstrap.min.css">
-
-
-  <script src="jquery-2.2.3.min.js"></script>
-  <script src="bootstrap.min.js"></script>
-  
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- HEADER -->
   <header>
     <nav>
        <div id="miverina">
@@ -24,90 +21,126 @@
       </div>
       </div>
       <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="profil.html">Profil</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="\projet/index.html#miverina">Accueil</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="\projet/index.html#portfolio">Portfolio</a></li>
         <li><a href="https://github.com/nahitantsoa" target="_blank">Autre projet</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="accueil" class="hero">
-    <h1>Mes Projets</h1>
-    <p>Vidéos • Photos • Documents • Application</p>
-    <a href="profil.html" class="btn">Voir le profil</a>
-    <a href="#portfolio" class="btn">Voir le portfolio</a>
-
-  </section>
-
-<section id="profil" class="profil-section">
-  <div class="container">
-    <h2>Profil Professionnel</h2>
-
-      <!-- contenu CV -->
-        <div class="resume">
-          <h3>Résumé</h3>
-          <p>
-            Titulaire d'une Licence en Informatique, passionné par les technologies de l'information et motivé par le développement continu de mes compétences. Organisé, rigoureux et déterminé, curieux et adaptable, prêt à relever de nouveaux défis et à m'intégrer efficacement dans un environnement professionnel dynamique. Fort d'expériences en administration de réseaux, cybersécurité et gestion hydraulique, je vise à contribuer à des projets innovants alliant IT et solutions durables.
-          </p>
-        </div>
-  
+<!-- HERO -->
+<section id="accueil" class="hero">
+  <h1>Mes Projets</h1>
+  <p>Vidéos • Photos • Documents • Applications</p>
+  <div class="buttons">
+    <a href="profil.html" class="btn btn-primary">Voir le profil</a>
+    <a href="#portfolio" class="btn btn-success">Voir le portfolio</a>
   </div>
-
 </section>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-
-    <div class="grid">
-
-      <!-- VIDÉO -->
-      <div class="card">
-        <h3>Projet Vidéo 1</h3>
-        <video controls width="100%">
-          <source src="assets/videos/projet1.mp4" type="video/mp4">
-          Désolé, la vidéo ne se charge pas.
-        </video>
-        <p>Description de la vidéo</p>
+<!-- PROFIL -->
+<section id="profil" class="profil-section">
+  <div class="container profil-grid">
+    <div class="profil-left">
+      <div class="photo-profil">
+        <img src="assets/images/mon-profil.jpg" alt="Photo de Nahitantsoa">
       </div>
-
-      <!-- IMAGE -->
-      <div class="card">
-        <h3>Photo Projet</h3>
-        <img src="assets/images/Réseau local.png" alt="Ma photo" style="width:100%;">
-        <p>Réseau Local créer par la Microsoft visio</p>
-	<img src="assets/images/l'attaque MITM.jpg" alt="Ma photo" style="width:100%;">
-        <p>Attaque MITM,C'est la Modification d'address MAC</p>
+      <div class="sig">
+        <img src="assets/images/signature.jpg" alt="Signature">
       </div>
-
-      <!-- DOCUMENT -->
-      <div class="card">
-        <h3>Document PDF</h3>
-        <p><a href="assets/documents/Surveillance sur l'attaque MITM.pdf" download>Surveillance sur l'attaque MITM.pdf</a></p>
-        <p><a href="assets/documents/Présentation.pptx" download>Présentation.pptx</a></p>
-        <p>Clique pour télécharger</p>
+      <div class="contact-info">
+        <h3 class="titre-poste">Développeur & Pentester</h3>
+        <ul class="contact-list">
+          <li>Email : <a href="mailto:nahitantsoa@example.com">nahitantsoaevariste5@gmail.com</a></li>
+          <li>GitHub : <a href="https://github.com/nahitantsoa" target="_blank">github.com/nahitantsoa</a></li>
+          <li>LinkedIn : <a href="#" target="_blank">linkedin.com/in/nahitantsoa</a></li>
+        </ul>
       </div>
-
     </div>
+    <div class="profil-right">
+      <div class="resume">
+        <h3>Résumé</h3>
+        <p>
+          Titulaire d'une Licence en Informatique, passionné par les technologies
+          de l'information et motivé par le développement continu de mes compétences.
+          Organisé, rigoureux et déterminé, curieux et adaptable.
+        </p>
+        <p>
+          Fort d'expériences en administration réseaux, cybersécurité et gestion
+          hydraulique, je vise à contribuer à des projets innovants alliant IT et
+          solutions durables.
+        </p>
+      </div>
+      <div class="competences">
+        <h3>Compétences</h3>
+        <div class="skills-grid">
+          <div>Cybersécurité</div>
+          <div>Réseau</div>
+          <div>Linux</div>
+          <div>Pentest</div>
+          <div>Python</div>
+          <div>HTML/CSS/JS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-     <h2>Application</h2>
-    
-       <a href="application/météo/météo.html"><img src="essets/images/météo.jpg"></a>
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="grid container">
+    <!-- Vidéo -->
+    <div class="card">
+      <h3>Projet Vidéo</h3>
+      <video controls width="100%">
+        <source src="assets/videos/projet1.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      <p>Description du projet vidéo.</p>
+    </div>
+    <!-- Images -->
+    <div class="card">
+      <h3>Projet Réseau</h3>
+      <img src="assets/images/reseau-local.png" alt="Réseau local">
+      <p>Réseau Local créé avec Microsoft Visio.</p>
+      <img src="assets/images/attaque-mitm.jpg" alt="Attaque MITM">
+      <p>Attaque MITM : modification d'adresse MAC.</p>
+    </div>
+    <!-- Documents -->
+    <div class="card">
+      <h3>Documents</h3>
+      <ul>
+        <li><a href="assets/documents/Surveillance attaque MITM.pdf" download>Surveillance MITM (PDF)</a></li>
+        <li><a href="assets/documents/presentation.pptx" download>Présentation PowerPoint</a></li>
+      </ul>
+      <p>Télécharger les documents.</p>
+    </div>
+  </div>
+</section>
 
-  </section>
+<!-- APPLICATION -->
+<section class="application">
+  <h2>Application</h2>
+  <div class="app container">
+    <a href="application/météo/météo.html">
+      <img src="assets/images/sir.ico" alt="Application météo">
+    </a>
+  </div>
+</section>
 
+<!-- FOOTER -->
 <footer>
-  <ul>
-    <a href="#miverina">Vers haut</a>
-  </ul>
+  <p><a href="#miverina">Retour en haut</a></p>
   <p>© Nahitantsoa 2026</p>
-  
-  <!-- Compteur visiteurs -->
-  <p style="text-align:center; margin-top:10px; font-size:0.95em; color:#555;">
-    Visiteurs : <img src="https://nahitantsoa.github.io/site/" alt="visiteurs" style="vertical-align:middle;">
-  </p>
+  <p style="font-size:0.9em;color:#ccc;">Visiteurs : <img src="https://nahitantsoa.github.io/site/" alt="compteur visiteurs"></p>
 </footer>
 
-  <script src="script.js"></script>
+<!-- JS -->
+<script src="jquery-2.2.3.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
