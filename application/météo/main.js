@@ -1,7 +1,6 @@
 let villeChoisie = "saint-saulve";
 recevoirTemperature(villeChoisie);
 
-​
 let changerDeVille = document.querySelector('#changer');
 changerDeVille.addEventListener('click', () => {
 villeChoisie = prompt('Quelle ville souhaitez-vous voir ?');
@@ -9,11 +8,9 @@ villeChoisie = prompt('Quelle ville souhaitez-vous voir ?');
 recevoirTemperature(villeChoisie);
 });
 
-​
 function recevoirTemperature(ville) {
   const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&appid=dc8c9152e8adaad0ec8bf635818c0d42&units=metric';
 
-​
   let requete = new XMLHttpRequest(); // Nous créons un objet qui nous permettra de faire des requêtes
   requete.open('GET', url); // Nous récupérons juste des données
 
@@ -21,7 +18,6 @@ function recevoirTemperature(ville) {
 
   requete.send(); // Nous envoyons notre requête
 
-​
   // Dès qu'on reçoit une réponse, cette fonction est executé
   requete.onload = function() {
     if (requete.readyState === XMLHttpRequest.DONE) {
